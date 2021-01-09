@@ -7,8 +7,12 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  tls:
+    - hosts:
+        - pg-k8s.local
+      secretName: pg-k8s-tls
   rules:
-    - host: localhost
+    - host: pg-k8s.local
       http:
         paths:
           - path: /nginx

@@ -6,7 +6,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -103,3 +104,9 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .idea
+
+# app specific
+
+def/secret.tls.yml
+setup/private.key
+setup/server.crt
